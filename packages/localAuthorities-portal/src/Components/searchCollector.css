@@ -1,0 +1,81 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+  --extra-color: rgb(228, 226, 208);
+}
+
+.search {
+  color: var(--alter-color);
+  height: 16rem;
+  width: 30rem;
+  background-color: azure;
+  box-shadow: 0 0 2rem rgba(75, 72, 72, 0.4);
+  margin-left: -12rem;
+  font-size: 13px;
+  margin-bottom: -17rem;
+}
+.searchDiv {
+  margin-top: -2.3rem;
+  margin-left: 27.5rem;
+}
+
+.searchBtn {
+  padding: 4px 10px;
+  color: var(--extra-color);
+  background-color: var(--primary-color);
+  font-weight: bolder;
+  border: none;
+  border-radius: 8px;
+  margin-left: -5rem;
+}
+
+.search .searchHeading {
+  font-size: 17px;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.search input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  border: none;
+  padding-left: 1rem;
+  margin-left: 2.5rem;
+  width: 25rem;
+  height: 3rem;
+}
+
+.search label {
+  margin-top: 1.25rem;
+  font-weight: bold;
+  font-size: 13px;
+  color: var(--color-three);
+}
+.nameU {
+  margin-left: 10rem;
+}
+
+.userN {
+  margin-left: 10rem;
+}
+
+.phone {
+  margin-left: 10rem;
+}
+
+.nameV {
+  margin-left: 1rem;
+}
+
+.us {
+  margin-left: 1rem;
+}
+
+.contact {
+  margin-left: 1rem;
+}

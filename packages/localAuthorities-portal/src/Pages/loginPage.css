@@ -1,0 +1,27 @@
+
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #C6D870;
+  --color-two: #EFF5D2;
+  --color-three: #035812;
+ 
+}
+
+.loginPage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+ 
+  
+
+}
+.login-container{
+   background: linear-gradient(200deg, var(--color-two), var(--color-three));
+   height: 100vh
+
+
+  
+}
+

@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+}
+
+.headerName {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: var(--alter-color);
+  margin: -1rem -1.25rem;
+}
+
+.smartbin-pickup {
+  max-height: 790px;
+  overflow-y: auto;
+  border-radius: 12px;
+  border: 1px solid var(--color-one);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  margin-right: 5rem;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.custom-table thead th {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-three);
+  color: white;
+  padding: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.custom-table tbody tr {
+  background-color: white;
+  border-bottom: 1px solid var(--color-two);
+}
+
+.custom-table td {
+  padding: 14px 16px;
+  color: var(--alter-color);
+  font-size: 0.95rem;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.btn-update {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-update:hover {
+  background-color: var(--secondary-color);
+}
+
+.btn-map {
+  background-color: var(--alter-color);
+  color: var(--color-two);
+}
+
+.btn-map:hover {
+  background-color: var(--color-two);
+  color: var(--alter-color);
+}
+
+.status-pill {
+  padding: 4px 10px;
+  border-radius: 20px;
+  background-color: var(--color-two);
+  color: red;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 5rem;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .headerName {
+    font-size: 20px;
+  }
+  .smartbin-pickup {
+    margin-right: 0;
+  }
+
+  .custom-table,
+  .custom-table thead,
+  .custom-table tbody,
+  .custom-table th,
+  .custom-table td,
+  .custom-table tr {
+    display: block;
+    width: 100%;
+  }
+
+  .custom-table thead {
+    display: none;
+  }
+
+  .custom-table tbody tr {
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+
+  .custom-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border: none;
+    font-size: 0.9rem;
+  }
+  .locationS{
+  text-align: right;
+}
+
+  .custom-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: var(--color-three);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin: 6px 0;
+    width: 10rem;
+  }
+}

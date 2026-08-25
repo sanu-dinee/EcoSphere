@@ -1,0 +1,236 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+  --extra-color: rgb(214, 214, 214);
+}
+
+.login-wrapper {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  width: 350px;
+}
+
+.login-box {
+  background-color: white;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid var(--color-one);
+}
+
+.member-icon-container {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(30, 161, 52, 0.4);
+}
+
+.member-icon {
+  width: 60px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.title {
+  color: var(--color-three);
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.ErrorMessage {
+  text-align: left;
+  padding: 5px;
+  color: red;
+  font-size: 15px;
+  margin-bottom: -1.5rem;
+  background-color: rgba(255, 0, 0, 0.15);
+}
+.input-group {
+  height: 3rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 8px;
+  padding-left: 0.1rem;
+}
+
+.input-group:focus-within {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(30, 161, 52, 0.2);
+}
+
+.input-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 15.75rem;
+}
+.userIcon {
+  margin-top: 0.55rem;
+}
+
+.password-toggle-icon {
+  order: 2;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.input-group input {
+  margin-bottom: -1rem;
+  height: 20px;
+  font-size: 14px;
+  color: var(--primary-color);
+  font-weight: 500;
+  background-color: white;
+  width: 230px;
+}
+
+.pass {
+  margin-top: 0.75rem;
+  padding-left: 1rem;
+  border: white;
+  outline: none;
+}
+
+.userI {
+  margin-top: -1.4rem;
+  padding-left: 1rem;
+  border: white;
+  outline: none;
+}
+
+.input-group input::placeholder {
+  color: var(--primary-color);
+  font-weight: normal;
+}
+
+.signin-button {
+  width: 100%;
+  padding: 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(30, 161, 52, 0.3);
+  transition:
+    background-color 0.3s,
+    transform 0.1s;
+  margin-top: 10px;
+}
+
+.signin-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-1px);
+}
+
+.forgot-password-link {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--color-text-dark);
+}
+
+.forgot-password-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.forgot-password-link a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-password-toggle-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: #fff;
+  padding: 20px;
+  width: 325px;
+  border-radius: 8px;
+}
+
+.popup-box h4 {
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-color: var(--primary-color);
+  color: var(--primary-color) !important;
+  padding-left: 1rem;
+}
+
+.popup-box input::placeholder {
+  padding: 0.5rem;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 40px;
+  margin-right: 0.5rem;
+}
+
+.rBtn {
+  border-radius: 5px;
+  padding: 3px;
+  width: 5rem;
+  background-color: white;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.errorMsg {
+  color: red;
+}
+
+.successMsg {
+  color: var(--primary-color);
+}

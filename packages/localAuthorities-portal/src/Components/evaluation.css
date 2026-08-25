@@ -1,0 +1,118 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+}
+
+.eHead {
+  color: var(--primary-color);
+  font-size: 20px;
+  margin-bottom: -0.5rem;
+  margin-left: -30rem;
+}
+.reportButton {
+  margin-top: -1.5rem;
+  margin-right: -33rem;
+}
+.reportGenerate {
+  padding: 5px 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  border: none;
+  color: white;
+  font-weight: bolder;
+  background-color: rgb(86, 129, 217);
+}
+
+.statistics label {
+  color: var(--color-three);
+  font-size: 13px;
+  margin-left: 1rem;
+}
+
+.statistics select {
+  margin-left: 0.2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background-color: var(--color-three);
+  color: var(--color-two);
+  font-size: 13px;
+  border-radius: none;
+}
+
+.statistics .barchart {
+  font-size: 10px;
+}
+.reduction .barchartOther {
+  font-size: 10px;
+}
+.statistics .barchart:hover {
+  border: white;
+}
+
+.statistics select:hover {
+  border: var(--color-three);
+}
+
+.statistics .barchart:focus {
+  outline: none;
+  border: white;
+}
+.statistics {
+  width: 45rem;
+  margin-left: -2rem;
+}
+
+.statistics .body {
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+.reduction label {
+  color: var(--color-three);
+  font-size: 13px;
+  margin-left: 1rem;
+}
+
+.reduction select {
+  margin-left: 0.25rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background-color: var(--color-two);
+  color: var(--color-three);
+  font-size: 13px;
+  border-radius: none;
+}
+.reduction {
+  width: 45rem;
+  margin-left: 0.5rem;
+  margin-top: -1.5rem;
+}
+.barchart {
+  margin-left: -3rem;
+}
+.barchartOther {
+  margin-left: -3rem;
+}
+
+.reduction .body {
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+
+.reduction:hover {
+  border: var(--color-two);
+}
+
+.statistics {
+  background-color: azure;
+  box-shadow: 0 0 1rem rgba(75, 72, 72, 0.1);
+}
+
+.reduction {
+  background-color: azure;
+  box-shadow: 0 0 1rem rgba(75, 72, 72, 0.1);
+}

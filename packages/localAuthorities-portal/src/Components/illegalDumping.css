@@ -1,0 +1,153 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+  --r: rgb(197, 197, 78);
+}
+
+.illegalTable .container .firstRow button {
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+.illegalTable {
+  width: 50rem;
+  margin-top: 10rem;
+  padding-bottom: 3rem;
+  font-size: 13px;
+  margin-left: -3rem;
+  margin-bottom: -21rem;
+}
+
+.illegalTable .container {
+  background-color: azure;
+  height: 25rem;
+  width: 70rem;
+  box-shadow: 0 0 2rem rgba(75, 72, 72, 0.4);
+  margin-left: 1rem;
+}
+
+.b1 {
+  background-color: var(--color-three);
+  color: var(--color-one);
+  border: var(--primary-color);
+  width: 13rem;
+  margin-left: 15rem;
+}
+
+.b2 {
+  background-color: var(--color-one);
+  color: var(--color-three);
+  border: var(--color-two);
+  height: 2rem;
+  margin-left: 5rem;
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+.b1,
+.b2 {
+  margin-top: 1.5rem;
+  font-size: 12px;
+}
+
+.container .row {
+  color: var(--alter-color);
+}
+
+.secondRow,
+.thirdRow {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 13px;
+}
+
+.illegalTable .p {
+  color: var(--color-two);
+  background-color: red;
+  border-radius: 15px;
+  width: 6rem;
+  height: 2.5rem;
+  font-size: 13px;
+}
+
+.illegalTable .p1 {
+  color: var(--color-two);
+  background-color: red;
+  border-radius: 15px;
+  width: 5rem;
+  height: 2.5rem;
+  font-size: 13px;
+  border: none;
+}
+
+.formSelect,
+.formSelect1 {
+  width: 10rem;
+  height: 1.5rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: var(--alter-color);
+  background-color: var(--color-two);
+  font-size: 13px;
+}
+
+.p {
+  border: var(--primary-color);
+}
+
+.illegalTable .scroll-table-container {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+
+.illegalTable .radio {
+  height: 0.75rem;
+  width: 1rem;
+  margin-left: -1.25rem;
+  margin-bottom: -1rem;
+}
+
+.illegalTable .r {
+  margin-top: -3rem;
+  text-align: center;
+}
+
+.illegalTable .radio1 {
+  height: 0.75rem;
+  width: 1rem;
+  margin-left: -2rem;
+  margin-bottom: -1.2rem;
+}
+
+.illegalTable .rb {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  margin-right: 1.25rem;
+}
+
+.illegalTable .date {
+  width: 0.25rem;
+}
+
+.illegalTable .statusBtn {
+  width: 1px;
+}
+
+.evidence {
+  height: 10rem;
+  width: 10rem;
+}
+
+.description {
+  height: 10rem;
+  width: 10rem;
+}
+.col {
+  text-align: center;
+}
+
+.body {
+  text-align: center;
+}

@@ -1,0 +1,109 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #cadb7f;
+  --alter-color: #2f4733;
+}
+
+.registerLogin {
+  width: 22rem;
+  padding: 20px;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: var(--alter-color);
+  height: 47rem;
+  color: var(--color-two);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  padding-right: 1rem;
+  margin-top: -7.5rem;
+  margin-left: -25rem;
+}
+
+.registerLogin h2 {
+  margin-bottom: 4rem;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.registerBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: var(--input-bg);
+  border-radius: 5px;
+  padding: 1.5rem;
+  padding-left: 1rem;
+  margin-top: -1rem;
+}
+
+.inputGroup img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.75rem;
+}
+
+.inputGroup input {
+  flex: 1;
+  border: 1px solid var(--color-one);
+  background: transparent;
+  color: var(--color-two);
+  font-size: 0.95rem;
+  padding: 0.25rem;
+}
+
+.inputGroup input::placeholder {
+  color: var(--color-one);
+}
+
+.inputGroup .toggleEye {
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  margin-left: -2rem;
+}
+.collectorError {
+  color: white;
+}
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.registerLogin button {
+  flex: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.submit {
+  background-color: var(--primary-color);
+  color: var(--color-two);
+}
+
+.submit:hover {
+  background-color: var(--color-one);
+}
+
+.cancelButton {
+  background-color: var(--color-one);
+  color: var(--dark-bg);
+}
+
+.cancelButton:hover {
+  background-color: var(--primary-color);
+  color: var(--color-two);
+}

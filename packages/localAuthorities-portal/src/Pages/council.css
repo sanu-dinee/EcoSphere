@@ -1,0 +1,37 @@
+:root {
+  --primary-color:  #1ea134;;
+  --secondary-color: #6dd11b;
+  --color-one: #C6D870;
+  --color-two: #EFF5D2;
+  --color-three: #035812;
+   --alter-color: #2f4733;
+    --extra-color:rgb(214, 214, 214);
+}
+
+.dashboard-container{
+  width: 100vw;
+    min-height: 100vh !important;
+    display: flex;
+    
+    flex-direction: column;
+    overflow-y: auto !important;
+    
+
+}
+
+.councilTable{
+  margin-top: 6rem;
+  margin-left: 5.5rem;
+  flex: 1;
+  overflow-y: auto;
+ 
+}
+
+.schedule{
+     padding-top: 2rem;
+    
+}
+
+.eInfo1{
+ padding-top: 1.5rem;
+}

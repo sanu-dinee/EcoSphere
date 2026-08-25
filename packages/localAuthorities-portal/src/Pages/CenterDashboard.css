@@ -1,0 +1,204 @@
+:root {
+  --primary: #2e7d32;
+  --dark-green: #1b5e20;
+  --light-green: #a5d6a7;
+  --accent: #4caf50;
+  --header-height: 90px;
+}
+/* Ensure the whole page doesn't scroll */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column; /* Stacks header on top of viewport */
+  height: 100vh;
+  width: 100vw;
+}
+
+.main-dashboard-header {
+  position: relative; /* Keeps it in the document flow */
+  height: 90px;
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 2000; /* Higher than Leaflet's internal layers */
+  border-bottom: 3px solid #4caf50;
+  flex-shrink: 0; /* Prevents header from squishing */
+}
+
+.dashboard-viewport {
+  position: relative; /* Context for absolute floating panels */
+  flex-grow: 1; /* Takes up remaining height */
+  overflow: hidden;
+}
+
+.map-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; /* Lowest layer in the viewport */
+}
+
+/* Fix for SideNav positioning relative to header */
+.side-nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: 20px;
+  z-index: 1000; /* Above map, below header if they overlap */
+}
+
+/* Fix for Detail Panel positioning relative to header */
+.detail-panel {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  z-index: 1000;
+}
+.dashboard-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+/* BIG HEADER STYLING */
+.main-dashboard-header {
+  height: var(--header-height);
+  background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  z-index: 2000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  border-bottom: 3px solid var(--accent);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--light-green);
+}
+
+.header-logo-icon {
+  color: var(--light-green);
+  filter: drop-shadow(0 0 5px var(--light-green));
+}
+
+.title-stack h1 {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.subtitle {
+  color: var(--light-green);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* VIEWPORT LOGIC */
+.dashboard-viewport {
+  position: relative;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.map-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* STATUS PILLS */
+.header-right {
+  display: flex;
+  gap: 15px;
+}
+
+.system-status {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.status-indicator.online {
+  width: 8px;
+  height: 8px;
+  background: #00e676;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00e676;
+}
+
+.header-stat-pill {
+  background: var(--light-green);
+  color: var(--dark-green);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Tablet view */
+
+@media (min-width: 600px) {
+
+  .leaflet-container {
+
+    height: 300px;
+
+  }
+
+}
+
+
+
+/* Desktop view */
+
+@media (min-width: 900px) {
+
+  .leaflet-container {
+
+    height: 400px;
+
+  }
+
+}

@@ -1,0 +1,89 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+}
+
+.pickup h2 {
+  font-size: 1rem;
+  color: var(--color-three);
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.schedule label {
+  margin-left: 0.4rem;
+  margin-top: 0.5rem;
+  color: var(--alter-color);
+  font-weight: bolder;
+  padding-right: 3rem;
+}
+
+.schedule input {
+  margin-left: 0.24rem;
+  color: var(--alter-color);
+  font-weight: bolder;
+  padding-left: 12px;
+  width: 15rem;
+}
+.schedule button {
+  margin-top: 1.5rem;
+  margin-left: 5rem;
+  height: 1.5rem;
+  width: 6rem;
+  border: none;
+  color: var(--color-one);
+  font-weight: bolder;
+  background-color: var(--color-three);
+}
+
+.pickup {
+  background-color: azure;
+  box-shadow: 0 0 2rem rgba(75, 72, 72, 0.4);
+  width: 100%;
+  max-width: 35rem;
+  padding-bottom: 1rem;
+  height: 17rem;
+  margin-bottom: -12.25rem;
+  margin-left: -1.75rem;
+}
+
+.scheduleForm {
+  margin-left: 1.5rem;
+  border: none;
+  font-size: 13px;
+  height: 8rem;
+}
+
+.pickup .heading {
+  margin-top: 1rem;
+}
+
+.collector {
+  height: 2rem;
+  width: 10rem;
+}
+
+.collectorName {
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+
+.routeName {
+  height: 2rem;
+  width: 10rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.cName {
+  padding-top: 0.5rem;
+}
+
+.locationName {
+  width: 10rem;
+  height: 2rem;
+}

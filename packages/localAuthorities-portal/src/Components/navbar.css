@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+  --extra-color: rgb(228, 226, 208);
+}
+
+.NavBar .logo {
+  height: 3rem;
+  width: 3rem;
+}
+
+.navbar {
+  background-color: var(--extra-color);
+  height: 4rem;
+  width: 101.9rem;
+  position: fixed;
+}
+
+.navbar-brand {
+  font-size: 13px;
+  color: var(--color-three);
+}
+
+.nav-item .nav-link {
+  color: var(--primary-color);
+  font-weight: bolder;
+  font-size: 0.75rem;
+  margin-right: 2rem;
+  width: 6rem;
+  padding: 14px 15px;
+  background: transparent;
+  border-radius: 16px;
+}
+
+.nav-item .nav-link:hover {
+  background: #a5d6a7;
+}
+
+.NavBar img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.5rem;
+}

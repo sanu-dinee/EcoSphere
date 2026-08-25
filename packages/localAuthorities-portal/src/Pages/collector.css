@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #1ea134;
+  --secondary-color: #6dd11b;
+  --color-one: #c6d870;
+  --color-two: #eff5d2;
+  --color-three: #035812;
+  --alter-color: #2f4733;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.gc-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  
+}
+
+
+
+.gc-sidebar {
+  width: 200px;
+  background: linear-gradient(250deg, #035812, #1ea134, #6dd11b, #035812);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 0;
+  
+}
+
+
+.gc-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.gc-btn {
+  background: var(--color-three);
+  color: var(--color-two);
+  border: none;
+  padding: 12px;
+  width: 80%;
+  margin: 1rem auto;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gc-btn:hover {
+  background: var(--alter-color);
+  color: #fff;
+}
+
+.goProfile {
+  width: 40px;
+  height: 40px;
+  background: var(--color-two);
+  border-radius: 50%;
+  margin: 1rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.userProfile {
+  width: 20px;
+}
+
+
+
+.gc-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gc-header {
+  height: 3rem;
+  background: linear-gradient(
+    135deg,
+    #035812,
+    #1ea134,
+    #6dd11b,
+    #2f4733
+  );
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.gc-hamburger {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+  cursor: pointer;
+}
+
+.gc-content {
+  flex: 1;
+  padding: 4rem;
+  overflow-y: auto;
+}
+
+
+
+@media (max-width: 768px) {
+  .gc-container {
+    flex-direction: column;
+  }
+
+ 
+  .gc-sidebar {
+    width: 100%;
+    background: linear-gradient(250deg, #035812, #1ea134, #6dd11b, #035812);
+  }
+
+ 
+  .gc-sidebar-inner {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+
+  .gc-sidebar-inner.show {
+    max-height: 500px; 
+  }
+
+  .gc-hamburger {
+    display: block;
+  }
+
+  
+}
+
