@@ -1,0 +1,67 @@
+{
+  "name": "ecosphere-root",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "clean-ports": "kill-port 2000 2001 2002",
+    "dev": "npm run clean-ports && concurrently --kill-others \"npm run dev -w citizen-portal\" \"npm run dev -w local-authorities\" \"npm run dev -w admin-portal\"",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-google-maps/api": "^2.20.7",
+    "@react-navigation/bottom-tabs": "^7.8.7",
+    "@react-navigation/elements": "^2.8.4",
+    "@react-navigation/native": "^7.1.22",
+    "@react-navigation/native-stack": "^7.8.1",
+    "@supabase/supabase-js": "^2.89.0",
+    "bootstrap": "^5.3.8",
+    "dotenv": "^17.2.3",
+    "framer-motion": "^12.23.26",
+    "html5-qrcode": "^2.3.8",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "lucide-react": "^0.555.0",
+    "lucide-react-native": "^0.555.0",
+    "maplibre-gl": "^5.16.0",
+    "pigeon-maps": "^0.22.1",
+    "postcss": "^8.5.6",
+    "react": "^19.2.0",
+    "react-confetti": "^6.4.0",
+    "react-dom": "^19.2.0",
+    "react-map-gl": "^8.1.0",
+    "react-native-safe-area-context": "^5.6.2",
+    "react-native-screens": "^4.18.0",
+    "react-native-size-matters": "^0.4.2",
+    "react-native-web": "^0.21.2",
+    "react-use": "^17.6.0",
+    "serialport": "^13.0.0",
+    "simple-swizzle": "^0.2.4",
+    "tailwindcss": "^4.1.17"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.17",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "concurrently": "^9.2.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "kill-port": "^2.0.1",
+    "vite": "^7.2.4",
+    "vite-plugin-mkcert": "^1.17.9",
+    "vite-plugin-react-native-web": "^2.5.0"
+  },
+  "browser": {
+    "react-native": "react-native-web",
+    "react-native/Libraries/Utilities/codegenNativeComponent": "./src/mocks/react-native-mocks.js"
+  }
+}
