@@ -1,0 +1,205 @@
+/* src/style/LandingPage.module.css */
+*{
+  overflow: hidden;
+}
+.landingPage {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ============================= */
+/* Background Image (Framer Motion) */
+/* ============================= */
+.bgImage {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  filter: contrast(1.08) saturate(1.15);
+  will-change: opacity, transform;
+}
+
+/* ============================= */
+/* Emerald Overlay (LIGHT) */
+/* ============================= */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 148, 136, 0.55) 0%,
+    rgba(6, 95, 70, 0.65) 100%
+  );
+}
+
+/* ============================= */
+/* Cinematic Vignette */
+/* ============================= */
+.landingPage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.38) 100%
+  );
+}
+
+/* ============================= */
+/* Glassmorphism Content Card */
+/* ============================= */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  width: 85%;
+  max-width: 420px;
+  max-height: 725px;
+  margin-top: -60px;
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ============================= */
+/* Header */
+/* ============================= */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 42px;
+}
+
+.logo {
+  margin-top: 5px;
+  margin-left :-20px;
+  height: 80px;
+  width: 80px;
+  opacity: 80%;
+}
+
+.title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -1px;
+
+  background: linear-gradient(90deg, #ffffff, #94f5e3);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================= */
+/* Hero Text */
+/* ============================= */
+.heroTitle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+
+.heroSubtitle {
+  font-size: 1.05rem;
+  opacity: 0.95;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* CTA Buttons */
+/* ============================= */
+.ctaGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 46px 0 38px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 40px;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Primary */
+.btnPrimary {
+  background: #ffffff;
+  color: #0d9488;
+}
+
+.btnPrimary::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(13, 148, 136, 0.25),
+    transparent
+  );
+  transition: transform 0.6s;
+}
+
+.btnPrimary:hover::before {
+  transform: translateX(100%);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px rgba(13, 148, 136, 0.45);
+}
+
+/* Secondary */
+.btnSecondary {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+}
+
+.btnSecondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  transform: translateY(-4px);
+}
+
+/* ============================= */
+/* Tablet & Up */
+/* ============================= */
+@media (min-width: 480px) {
+  .ctaGroup {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
